@@ -19,7 +19,7 @@
 
 function greet(name) {
   // Write your code here
-
+alert("Hello, " + name + "!")
 }
 
 
@@ -36,8 +36,10 @@ function greet(name) {
 //         First click → returns 1, second → returns 2, etc.
 
 
-
+let count = 0
 function myFunc() {
+  count = count + 1;
+  return(count);
   // Write your code here
 
 }
@@ -57,6 +59,13 @@ function myFunc() {
 
 function getRandomNum(max) {
   // Write your code here
+if (isNaN(max) || max < 0 || max === 0) {
+  return(0);
+}
+else {
+  max = Math.floor(Math.random() * max) + 1
+  return(max);
+}
 
 }
 
